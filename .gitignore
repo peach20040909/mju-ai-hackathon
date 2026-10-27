@@ -1,9 +1,12 @@
 node_modules
 .next
 out
-.env
-.env.local
 .vercel
 *.tsbuildinfo
 next-env.d.ts
 .DS_Store
+
+# 비밀값(API 키, 포트 등)은 .env* 에만 두고 절대 커밋하지 않기
+.env*
+# 예시 파일만 예외 (값은 비워둘 것)
+!.env.example
